@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanket Tambe - DevOps Engineer Portfolio. Expertise in AWS, Docker, Kubernetes, Terraform, and AI Technologies.">
+    <meta name="keywords" content="DevOps, AWS, Kubernetes, Docker, Terraform, CI/CD, Sanket Tambe">
+    <meta name="author" content="Sanket Tambe">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sankettambe2.github.io/">
+    <meta property="og:title" content="Sanket Tambe - DevOps Engineer">
+    <meta property="og:description" content="Portfolio of Sanket Tambe, specializing in Cloud Infrastructure and Automation.">
+    
+    <title>Sanket Tambe | DevOps Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00D9FF;
+            --bg-dark: #0a1119;
+            --bg-deep: #0f1a2e;
+            --text-main: #ffffff;
+            --text-muted: #a0aec0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-deep) 100%);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            z-index: 10;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin-bottom: 1rem;
+            animation: colorful-glow 4s linear infinite, float 3s ease-in-out infinite;
+        }
+
+        @keyframes colorful-glow {
+            0%, 100% {
+                color: var(--primary);
+                text-shadow: 0 0 20px rgba(0, 217, 255, 0.6), 0 0 40px rgba(0, 217, 255, 0.3);
+            }
+            33% {
+                color: #00ffcc;
+                text-shadow: 0 0 20px rgba(0, 255, 204, 0.6), 0 0 40px rgba(0, 255, 204, 0.3);
+            }
+            66% {
+                color: #00ccff;
+                text-shadow: 0 0 20px rgba(0, 204, 255, 0.6), 0 0 40px rgba(0, 204, 255, 0.3);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .loader-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .loader {
+            width: 80px;
+            height: 80px;
+            border: 4px solid rgba(0, 217, 255, 0.1);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            box-shadow: 0 0 25px rgba(0, 217, 255, 0.2);
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary);
+            color: var(--bg-dark);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid var(--primary);
+            box-shadow: 0 10px 20px rgba(0, 217, 255, 0.2);
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--primary);
+            box-shadow: 0 0 40px rgba(0, 217, 255, 0.8);
+            transform: scale(1.05) translateY(-5px);
+        }
+
+        /* Background animated elements */
+        .bg-glow {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 217, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: 1;
+            animation: move-glow 20s infinite alternate;
+        }
+
+        @keyframes move-glow {
+            0% { transform: translate(-50%, -50%); }
+            100% { transform: translate(50%, 50%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow" style="top: 20%; left: 20%;"></div>
+    <div class="bg-glow" style="bottom: 20%; right: 20%; animation-delay: -10s;"></div>
+
+    <div class="container">
+        <h1>Sanket Tambe</h1>
+        <p>DevOps Engineer • Cloud Infrastructure • AI Automation</p>
+        
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+        
+        <div style="margin-top: 1rem;">
+            <a href="https://sankettambe2.github.io/" class="btn">View Portfolio</a>
+        </div>
+        
+        <p style="margin-top: 3rem; font-size: 0.9rem; color: #4a5568;">
+            Redirecting to live portfolio...
+        </p>
+    </div>
+
+    <script>
+        // Redirect to main portfolio after a short delay
+        // For local Replit environment, it stays on '/', 
+        // but for GitHub Pages hosting, this file serves as the entry point.
+        setTimeout(() => {
+            // Uncomment the line below when deploying to a specific custom domain or subfolder
+            // window.location.href = '/portfolio-path'; 
+        }, 3000);
+    </script>
+</body>
+</html>
